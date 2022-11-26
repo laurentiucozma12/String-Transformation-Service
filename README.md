@@ -1,6 +1,6 @@
 # String Transformation Service    
 **Table of contents**
-- [Add Local Host](#adaugare-host-local)
+- [Add Local Host](#add-local-host)
 - [Documentation](#documentation)
 
 ## Add Local Host
