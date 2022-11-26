@@ -1,34 +1,35 @@
 # String Transformation Service    
 **Table of contents**
-- [Adaugare Host Local](#adaugare-host-local)
+- [Add Local Host](#adaugare-host-local)
 - [Documentation](#documentation)
 
-## Adaugare Host Local
-1. In C:\xampp\htdocs ai un folder cu proiectul, de exemplu project.learnPhp   
-2. Intri in:   
+## Add Local Host
+1. In C:\xampp\htdocs you have 1 folder with the project, for example project.learnPhp   
+2. Go in:   
 C:\xampp\apache\conf\extra\httpd-vhosts.conf   
-3. Add:   
-NumeHOST - domeniu Exemplu ( project.learnPhp ) -> http://project.learnPhp -> din browser
-NumeFOLDERsite - nume folder din htdocs    
+3.   
+HostName - domain Example ( project.learnPhp ) -> http://project.learnPhp -> in browser
+NameFOLDERsite - folder name from htdocs     
+Add:    
 ```
 <VirtualHost *:80>
-    ServerAdmin webmaster@NumeHOST
-    DocumentRoot "C:/xampp/htdocs/NumeFOLDERsite"
-    ServerName NumeHOST
-    ErrorLog "logs/NumeHOST-error.log"
-    CustomLog "logs/NumeHOST-access.log" common
+    ServerAdmin webmaster@HostName
+    DocumentRoot "C:/xampp/htdocs/HostName"
+    ServerName HostName
+    ErrorLog "logs/HostName-error.log"
+    CustomLog "logs/HostName-access.log" common
 </VirtualHost>
 ```
-4. Intri in:    
+4. Go in:    
 C:\Windows\system32\drivers\etc\hosts   
-Adaugi:   
-127.0.0.1[TAB]NumeHOST   
+Add:   
+127.0.0.1[TAB]HostName   
     
-Exemplu:   
+Example:   
 127.0.0.1	project.learnPhp    
    
-- Trebuie sa restartezi apache-ul/mysql din xampp dupa ce adaugi noul host
-- Daca nu merge, da un restart la pc/laptop cel mai simplu
+- You must restart the apache/mysql from xampp before you add the new host
+- If it does not work, restart the pc/laptop
 
 ## Documentation
 - ![CSV](https://docs.python.org/3/library/csv.html)

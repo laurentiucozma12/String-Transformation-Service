@@ -15,6 +15,8 @@ $display_table = '';
 if (isset($_POST['upload']) && $_POST['upload'] == 'Upload CSV')
 {
     $upload_dir = ROOT_PATH."/assets/csv/uploads";
+
+    // Moving the csv file in "uploads" folder
     if ($_FILES['csv']['error'] == UPLOAD_ERR_OK)
     {
         $tmp_name = $_FILES['csv']['tmp_name'];
