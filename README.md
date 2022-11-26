@@ -6,7 +6,9 @@
 ## Add Local Host
 1. In C:\xampp\htdocs you have 1 folder with the project, for example project.learnPhp   
 2. Go in:   
-C:\xampp\apache\conf\extra\httpd-vhosts.conf   
+```
+C:\xampp\apache\conf\extra\httpd-vhosts.conf  
+``` 
 3.   
 HostName - domain Example ( project.learnPhp ) -> http://project.learnPhp -> in browser
 NameFOLDERsite - folder name from htdocs        
@@ -20,8 +22,10 @@ Add:
     CustomLog "logs/HostName-access.log" common
 </VirtualHost>
 ```
-4. Go in:    
+4. Go in:   
+``` 
 C:\Windows\system32\drivers\etc\hosts   
+```
 Add:   
 ```
 127.0.0.1[TAB]HostName   
