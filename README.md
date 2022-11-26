@@ -1,7 +1,7 @@
-# String Transformation Service 
-
+# String Transformation Service    
 **Table of contents**
 - [Adaugare Host Local](#adaugare-host-local)
+- [Documentation](#documentation)
 
 ## Adaugare Host Local
 1. In C:\xampp\htdocs ai un folder cu proiectul, de exemplu project.learnPhp   
@@ -29,3 +29,25 @@ Exemplu:
    
 - Trebuie sa restartezi apache-ul/mysql din xampp dupa ce adaugi noul host
 - Daca nu merge, da un restart la pc/laptop cel mai simplu
+
+## Documentation
+- ![CSV](https://docs.python.org/3/library/csv.html)
+- ![MDN](https://developer.mozilla.org/en-US/)
+    - ![Enctype](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/enctype)
+- ![PHP]()
+    - ![fopen()](https://www.php.net/manual/en/function.fopen.php)
+    - ![fgetcsv()](https://www.php.net/manual/en/function.fgetcsv.php)
+    - ![$_SERVER](https://www.php.net/reserved.variables.server)
+    - ![getcwd()](https://www.php.net/manual/en/function.getcwd.php)
+    - ![DIRECTORY_SEPARATOR](https://www.php.net/manual/en/dir.constants.php) 
+    - ![basename()](https://www.php.net/manual/en/function.basename.php)
+    - ![move_uploaded_file](https://www.php.net/manual/en/function.move-uploaded-file.php)
+
+
+
+
+
+
+
+
+
