@@ -9,7 +9,7 @@
 C:\xampp\apache\conf\extra\httpd-vhosts.conf   
 3.   
 HostName - domain Example ( project.learnPhp ) -> http://project.learnPhp -> in browser
-NameFOLDERsite - folder name from htdocs     
+NameFOLDERsite - folder name from htdocs        
 Add:    
 ```
 <VirtualHost *:80>
