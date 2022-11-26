@@ -23,26 +23,28 @@ Add:
 4. Go in:    
 C:\Windows\system32\drivers\etc\hosts   
 Add:   
+```
 127.0.0.1[TAB]HostName   
-    
+```
 Example:   
+```
 127.0.0.1	project.learnPhp    
-   
+``` 
 - You must restart the apache/mysql from xampp before you add the new host
 - If it does not work, restart the pc/laptop
 
 ## Documentation
-- ![CSV](https://docs.python.org/3/library/csv.html)
-- ![MDN](https://developer.mozilla.org/en-US/)
-    - ![Enctype](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/enctype)
-- ![PHP]()
-    - ![fopen()](https://www.php.net/manual/en/function.fopen.php)
-    - ![fgetcsv()](https://www.php.net/manual/en/function.fgetcsv.php)
-    - ![$_SERVER](https://www.php.net/reserved.variables.server)
-    - ![getcwd()](https://www.php.net/manual/en/function.getcwd.php)
-    - ![DIRECTORY_SEPARATOR](https://www.php.net/manual/en/dir.constants.php) 
-    - ![basename()](https://www.php.net/manual/en/function.basename.php)
-    - ![move_uploaded_file](https://www.php.net/manual/en/function.move-uploaded-file.php)
+- [CSV](https://docs.python.org/3/library/csv.html)
+- [MDN](https://developer.mozilla.org/en-US/)
+    - [Enctype](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/enctype)
+- [PHP]()
+    - [fopen()](https://www.php.net/manual/en/function.fopen.php)
+    - [fgetcsv()](https://www.php.net/manual/en/function.fgetcsv.php)
+    - [$_SERVER](https://www.php.net/reserved.variables.server)
+    - [getcwd()](https://www.php.net/manual/en/function.getcwd.php)
+    - [DIRECTORY_SEPARATOR](https://www.php.net/manual/en/dir.constants.php) 
+    - [basename()](https://www.php.net/manual/en/function.basename.php)
+    - [move_uploaded_file](https://www.php.net/manual/en/function.move-uploaded-file.php)
 
 
 
