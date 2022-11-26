@@ -16,14 +16,19 @@ if (isset($_POST['upload']) && $_POST['upload'] == 'Upload CSV')
 {
     $upload_dir = ROOT_PATH."/assets/csv/uploads";
 
-    // Moving the csv file in "uploads" folder
     if ($_FILES['csv']['error'] == UPLOAD_ERR_OK)
     {        
         $tmp_name = $_FILES['csv']['tmp_name'];
+
+        // This is the chosen file
         $name = basename($_FILES['csv']['name']);
+
+        // Moving the modified csv file in "uploads" folder
         $csvfile = $upload_dir.DIRECTORY_SEPARATOR.$name;
         move_uploaded_file($tmp_name, $csvfile);
         echo 'uploaded';
+        
+        // Here comes the script which modifies the csv file
         $display_table = get_html($csvfile);
     }
 }

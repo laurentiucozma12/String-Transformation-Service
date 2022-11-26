@@ -3,24 +3,44 @@ function get_html($csv_file)
 {
     $html = '<table>';
     $file = fopen($csv_file, 'r');
-    $header_arr = fgetcsv($file);
+    
+    // Skip the first line
+    fgets($file); 
     $html .= '<thead>';
-    foreach ($header_arr as $k=>$v)
-    {
-        $html .= '<th>'.$v.'</th>';
-    }
+    $data = [];
 
     $html .= '<thead>';
     $html .= '<tbody>';
     while ($line = fgetcsv($file))
     {
-        $html .= '<tr>';
-        foreach ($line as $k=>$v)
-        {
-            $html .= '<td>'.$v.'</td>';
+        // Skip empty lines
+        if (array(null) !== $line)
+        {        
+            $data[] = $line;
         }
 
-        $html .= '</tr>';
+    }
+
+    // Sort alphabetically the data
+    usort($data, function($item1,$item2)
+    {
+        return $item1[0]<=>$item2[0];
+    });
+
+    // Delete the duplicates
+    $data = array_unique($data, SORT_REGULAR);
+    // $data = array_filter($data, fn($value) => !is_null($value) && $value !== '');
+
+    // Read the csv file
+    for ($i = 0; $i < count($data); $i++)
+    {       
+        $html .= '<div>';
+        for ($j = 0; $j < 3; $j++)
+        {  
+            $html .= $data[$i][$j];
+        }
+        
+        $html .= '</div>';
     }
 
     $html .= '</tbody>';
