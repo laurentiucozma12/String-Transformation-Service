@@ -18,7 +18,7 @@ if (isset($_POST['upload']) && $_POST['upload'] == 'Upload CSV')
 
     // Moving the csv file in "uploads" folder
     if ($_FILES['csv']['error'] == UPLOAD_ERR_OK)
-    {
+    {        
         $tmp_name = $_FILES['csv']['tmp_name'];
         $name = basename($_FILES['csv']['name']);
         $csvfile = $upload_dir.DIRECTORY_SEPARATOR.$name;

@@ -45,8 +45,8 @@ Example:
     - [fopen()](https://www.php.net/manual/en/function.fopen.php)
     - [fgetcsv()](https://www.php.net/manual/en/function.fgetcsv.php)
     - [$_SERVER](https://www.php.net/reserved.variables.server)
-    - [getcwd()](https://www.php.net/manual/en/function.getcwd.php)
     - [DIRECTORY_SEPARATOR](https://www.php.net/manual/en/dir.constants.php) 
+    - [$_FILES['']['']](https://www.php.net/manual/en/reserved.variables.files.php)
     - [basename()](https://www.php.net/manual/en/function.basename.php)
     - [move_uploaded_file](https://www.php.net/manual/en/function.move-uploaded-file.php)
 
