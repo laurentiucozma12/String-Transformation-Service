@@ -1,9 +1,14 @@
 # String Transformation Service    
-**Table of contents**
-- [Add Local Host](#add-local-host)
+## Table of contents
+- [How to run the project](#how-to-run-the-project)
 - [Documentation](#documentation)
 
-## Add Local Host
+## How to run the project
+### Download XAMPP
+1. Download XAMPP
+2. Open XAMPP
+3. Start Apache and Mysql
+### Add Local Host
 1. In C:\xampp\htdocs you have 1 folder with the project, for example project.learnPhp   
 2. Go in:   
 ```
@@ -36,6 +41,12 @@ Example:
 ``` 
 - You must restart the apache/mysql from xampp before you add the new host
 - If it does not work, restart the pc/laptop
+### Open the project
+1. Go in browser and type in the upper search bar:
+```
+http://projectName/app/pages/dashboard.php
+```
+- Do not forget to change the "projectName" with the name of your folder you saved the project in.
 
 ## Documentation
 - [CSV](https://docs.python.org/3/library/csv.html)
@@ -52,6 +63,7 @@ Example:
     - [move_uploaded_file](https://www.php.net/manual/en/function.move-uploaded-file.php)
     - [usort()](https://www.php.net/manual/en/function.usort.php)
     - [array_unique](https://www.php.net/manual/en/function.array-unique.php)
+    - [in_array()](https://www.php.net/manual/en/function.in-array.php)
 
 
 

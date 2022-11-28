@@ -2,42 +2,40 @@
 function get_html($csv_file)
 {    
     $data = [];
-    $html = '';
+    $results = [];
     $file = fopen($csv_file, 'r');
     
     // Skip the first line
     fgets($file); 
 
+    // Add data to an array
     while ($line = fgetcsv($file))
-    {
-        // Skip empty lines
-        if (array(null) !== $line)
-        {        
-            $data[] = $line;
-        }
-
+    {    
+        $data[] = $line;
     }
 
     // Sort alphabetically the data
     usort($data, function($item1,$item2)
     {
         return $item1[0]<=>$item2[0];
-    });
+    });   
 
-    // Delete the duplicates
-    $data = array_unique($data, SORT_REGULAR);
+    // Read the data and print the results
+    $i = 0;
+    foreach ($data as $info)
+    {
+        if (!in_array($info, $results) && isset($info) && $info[0] != NULL)
+        {
+            $results[] = $info;
 
-    // Read the csv file
-    for ($i = 0; $i < count($data); $i++)
-    {       
-        $html .= '<div>';
             for ($j = 0; $j < 3; $j++)
-            {  
-                $html .= $data[$i][$j];
-            }        
-        $html .= '</div>';
-    }
+            {
+                echo $results[$i][$j];             
+            }
 
-    return $html;
+            echo '<br>';
+            $i++;
+        }
+    }
 }
 ?>

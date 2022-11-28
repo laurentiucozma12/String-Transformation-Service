@@ -23,24 +23,15 @@ if (isset($_POST['upload']) && $_POST['upload'] == 'Upload CSV')
         // This is the chosen file
         $name = basename($_FILES['csv']['name']);
 
-        // Moving the modified csv file in "uploads" folder
+        // Moving csv file in "uploads" folder
         $csvfile = $upload_dir.DIRECTORY_SEPARATOR.$name;
         move_uploaded_file($tmp_name, $csvfile);
-        echo 'uploaded';
+        echo 'uploaded<br>';
         
         // Here comes the script which modifies the csv file
-        $display_table = get_html($csvfile);
+        get_html($csvfile);
     }
 }
 ?>
-
-<div>
-    <?php 
-    if (strlen($display_table > 0))
-    {
-        echo $display_table; 
-    }
-    ?>
-</div>
 
 <?php include ROOT_PATH."/assets/html/footer.php" ?>
