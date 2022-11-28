@@ -35,9 +35,9 @@ function get_html($csv_file)
     $lastWord = $results[count($results) - 1][0];
 
     // Get the first char of the last and first words
-    $firstWordChar = $firstWord[0];
-    $lastWordChar = $lastWord[0];
-    foreach (range($firstWordChar, $lastWordChar) as $char)
+    $char1 = $firstWord[0];
+    $char2 = $lastWord[0];
+    foreach (range($char1, $char2) as $char)
     {
         $arrayChar = str_split($char);
         array_push($results, $arrayChar); 
@@ -48,34 +48,38 @@ function get_html($csv_file)
     {
         return $item1[0]<=>$item2[0];
     });
-
+    
     // Print the data
-    $i = 0;
-    foreach ($results as $info)
+    $length = count($results) + count(range($char1, $char2)) - 2;
+    for ($i = 0; $i < $length; $i++)
     {   
-        if (is_array($info) || is_object($info))
-        {        
-            foreach ($info as $word)
-            {     
-                echo $word;   
-            }
-            
-            echo '<br>';
-        }
-
-        $addBr = $info;
-        if (!is_array($addBr))
-        {        
-            str_split($addBr);
-        }
-
-        if (isset($addBr[$i][0]) && $addBr[$i][0] !== NULL 
-        && $addBr[$i][0] !== $addBr[$i + 1][0]) 
+        for ($j = 0; $j < 3; $j++)
         {
-            echo '<br>';
+            if (!is_array($results[$i][$j]))
+            {    
+                str_split($results[$i][$j]);
+            }           
+
+            echo $results[$i][$j];    
+
+            if ($j == 0)
+            {
+                // Get the words of current and next line    
+                $word1 = $results[$i][0];
+                $word2 = $results[$i + 1][0];
+    
+                // Get the first char of current words
+                $wordChar1 = $word1[0];
+                $wordChar2 = $word2[0];              
+            } 
+
+            if ($wordChar1 !== $wordChar2 && $j == 2)
+            {
+                echo '<br>';
+            }
         }        
-           
-        $i++;
+            
+        echo '<br>';
     }
 }
 ?>

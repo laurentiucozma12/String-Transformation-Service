@@ -26,7 +26,6 @@ if (isset($_POST['upload']) && $_POST['upload'] == 'Upload CSV')
         // Moving csv file in "uploads" folder
         $csvfile = $upload_dir.DIRECTORY_SEPARATOR.$name;
         move_uploaded_file($tmp_name, $csvfile);
-        echo 'uploaded<br>';
         
         // Here comes the script which modifies the csv file
         get_html($csvfile);
