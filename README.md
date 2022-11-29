@@ -1,9 +1,39 @@
 # String Transformation Service    
 ## Table of contents
+- [About](#about)
 - [Preview](#preview)
 - [How to run the project](#how-to-run-the-project)
 - [Documentation](#documentation)
 
+## About
+String Transformation Service can alphabetically order a csv file, remove the header and blank lines and add new letters when the first letteer of an user changes. Like in example:
+**Before:**
+```
+full_name, email, location
+
+Anita, anita@email.com, California
+
+Aron, aron.bla@email.com, California
+
+Aron, aron.bla@email.com, California
+
+Cosmin, kox@bla.com, Giurgiu
+
+Crina, ggl@test.com, Letcani
+
+Bogdan, vox@example.com, Resita
+```
+**After**
+```
+A
+Anita anita@email.com California
+Aron aron.bla@email.com California
+B
+Bogdan vox@example.com Resita
+C
+Cosmin kox@bla.com Giurgiu
+Crina ggl@test.com Letcani
+```
 ## Preview
 ### Dashboard
 ![dashboard](https://github.com/laurentiucozma12/String-Transformation-Service/blob/master/projectPreview/dashboard.png)
