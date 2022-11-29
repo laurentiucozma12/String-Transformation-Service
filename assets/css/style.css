@@ -2,6 +2,7 @@
     --white: #fff;
     --white-gray: #e0e0e0;
     --gray: #313131;
+    --gray2: #535353;
     --blue: #167CDA;
     --dark-blue: #1774ca;
     --blue-gray: #c5d2e5;
@@ -10,13 +11,6 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-.container {
-    color: var(--blue-gray);
-    background-color: var(--gray);
-    width: 500px !important;
-    margin-top: 4rem;
-    padding: 2rem !important;
 }
 /* Bootstrap buttons */
 input:hover, input:focus, input:active {
@@ -96,7 +90,42 @@ i:hover {
     cursor: pointer;
 }
 /* Body */
-
+.container {
+    color: var(--blue-gray);
+    background-color: var(--gray);
+    width: 500px !important;
+    margin-top: 4rem;
+    padding: 2rem !important;
+}
+.container .wrap {
+    background-color: var(--gray2);
+    border-radius: 10px;
+}
+.container .wrap .form-container {
+}
+.container .wrap .form-container input[type="file"] {
+    display: none;    
+}
+.container .wrap .form-container input[type="submit"] {
+    display: none;    
+}
+.container .wrap .form-container label {
+    font-weight: 500;
+    color: var(--gray2);
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.container .wrap .form-container label:hover {
+    color: white;
+    background-color: var(--gray2);
+    transition: .3s;
+}
+.container .wrap .list-container {
+}
 @media screen and (max-width: 1400px) {
     
 }
