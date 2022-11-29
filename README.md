@@ -65,10 +65,7 @@ http://projectName/app/pages/dashboard.php
     - [array_unique](https://www.php.net/manual/en/function.array-unique.php)
     - [array_push](https://www.php.net/manual/en/function.array-push.php)
     - [in_array()](https://www.php.net/manual/en/function.in-array.php)
-    - [is_array()](https://www.php.net/manual/en/function.is-array.php)
     - [is_string](https://www.php.net/manual/en/function.is-string.php)
-    - [array_splice](https://www.php.net/manual/en/function.array-splice.php)
-    - [str_split](https://www.php.net/manual/en/function.str-split.php)
 
 
 
