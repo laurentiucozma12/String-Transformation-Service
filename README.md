@@ -1,7 +1,12 @@
 # String Transformation Service    
 ## Table of contents
+- [Preview](#preview)
 - [How to run the project](#how-to-run-the-project)
 - [Documentation](#documentation)
+
+## Preview
+### Dashboard
+![dashboard](https://github.com/laurentiucozma12/String-Transformation-Service/blob/master/projectPreview/dashboard.png)
 
 ## How to run the project
 ### Download XAMPP
