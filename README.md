@@ -6,7 +6,7 @@
 - [Documentation](#documentation)
 
 ## About
-String Transformation Service can alphabetically order a csv file, remove the header and blank lines and add new letters when the first letteer of an user changes. Like in example:    
+String Transformation Service can alphabetically order a csv file, remove the header and blank lines and add new letters when the first letter of an user changes. Like in example:    
 **Before:**
 ```
 full_name, email, location
